@@ -311,6 +311,12 @@ template {
   margin: 0 auto;
 }
 
+.lines {
+  width: 60px;
+  height: 0px;
+  border: 3px solid #FFA501;
+}
+
 .promo {
   min-height: 100vh;
   position: relative;
@@ -377,18 +383,28 @@ template {
   line-height: 60px;
 }
 
-.title_fz14 {
-  font-size: 14px;
-  line-height: 21px;
-}
-
 .title_fz16 {
   font-size: 16px;
   line-height: 24px;
 }
 
+.title_fz12 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.title_fz14 {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+}
+
 .title_fz48 {
   font-size: 48px;
+}
+
+.title_fz36 {
+  font-size: 36px;
 }
 
 .btn {
@@ -571,5 +587,96 @@ template {
   height: 100%;
   background-color: #fff;
   opacity: .75;
+}
+
+.about {
+  margin-top: 120px;
+}
+
+.about_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 400px 570px;
+      grid-template-columns: 400px 570px;
+  -ms-grid-rows: 280px 280px;
+      grid-template-rows: 280px 280px;
+  -webkit-column-gap: 70px;
+          column-gap: 70px;
+  row-gap: 40px;
+}
+
+.about_elem-1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.about_elem-2 {
+  margin-top: 10px;
+}
+
+.about_fz16 {
+  position: relative;
+  padding-left: 12px;
+}
+
+.about_fz16:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -8px;
+  left: 0;
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+  background: #ffa501;
+}
+
+.about_fz14 {
+  margin-top: 20px;
+}
+
+.about_elem-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 260px 260px;
+      grid-template-columns: 260px 260px;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: 20px 50px;
+}
+
+.about_elems {
+  position: relative;
+}
+
+.about_elems:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -8px;
+  left: 0;
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+  background: #ffa501;
+}
+
+.about_elems svg {
+  position: absolute;
+  margin: 7px 0 0 18px;
+}
+
+.about_elems_title {
+  width: 260px;
+  font-weight: bold;
+  padding-left: 60px;
+}
+
+.about_elems_subtitle {
+  margin-top: 6px;
+  font-weight: 500;
+  width: 260px;
+  padding-left: 60px;
 }
 /*# sourceMappingURL=style.css.map */
