@@ -20,6 +20,22 @@
     height: 0px;
     border: 3px solid #FFA501;
 }
+@media screen and (max-width: 1024px) {
+    .conteiner {
+        width: 968px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .conteiner {
+        width: 750px;
+    }
+}  
+@media screen and (max-width: 425px) {
+    .conteiner {
+        width: 290px;
+    }
+} 
+
 
 @import 'blocks/promo';
 @import 'blocks/title';

@@ -102,3 +102,17 @@
         opacity: .75;
     }
 }
+@media screen and (max-width: 425px) {
+    .menu {
+        &_block {
+            width: 260px;
+        }
+        &__link {
+            font-size: 20px;
+            line-height: 25px;
+            &::before {
+                margin-top: 4px;
+            }
+        }
+    }
+}
