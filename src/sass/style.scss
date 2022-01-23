@@ -17,8 +17,13 @@
 }
 .lines {
     width: 60px;
-    height: 0px;
-    border: 3px solid #FFA501;
+    height: 3px;
+    background-color: $main-color;
+    &_resume {
+        margin: 25px auto 0 auto;
+    }
+    
+    
 }
 @media screen and (max-width: 1024px) {
     .conteiner {
@@ -43,3 +48,4 @@
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
 @import 'blocks/about';
+@import 'blocks/resume';
