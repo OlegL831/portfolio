@@ -881,6 +881,7 @@ template {
 
 .resume__column-title {
   position: relative;
+  width: 200px;
   padding-left: 35px;
 }
 
@@ -975,5 +976,43 @@ template {
 .resume__item-body {
   font-size: 12px;
   line-height: 18px;
+}
+
+.resume_fz14 {
+  width: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+  .resume__wrapper {
+    -ms-grid-columns: (350px)[2];
+        grid-template-columns: repeat(2, 350px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .resume {
+    padding-top: 80px;
+  }
+  .resume__wrapper {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .resume {
+    padding-top: 20px;
+  }
+  .resume__wrapper {
+    padding-left: 8px;
+  }
+  .resume__item:before {
+    width: 30px;
+  }
+  .resume__item-icon {
+    left: 30px;
+  }
+  .resume__item-head {
+    padding-left: 85px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

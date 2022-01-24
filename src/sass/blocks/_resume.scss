@@ -27,6 +27,7 @@
     &__column {
         &-title {
             position: relative;
+            width: 200px;
             padding-left: 35px;
             &::before{
                 content: '';
@@ -98,5 +99,44 @@
             font-size: 12px;
             line-height: 18px;
         }
+    }
+    &_fz14 {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2, 350px );
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .resume {
+        padding-top: 80px;
+        &__wrapper {
+            display: block;
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    .resume {
+        padding-top: 20px;
+        &__wrapper {
+            padding-left: 8px;
+        }
+        &__item {
+            &:before {
+
+                width: 30px;
+            }
+        }
+        &__item-icon {
+            left: 30px;
+        }
+        &__item-head {
+            padding-left: 85px;
+        }
+
     }
 }
