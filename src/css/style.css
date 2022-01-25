@@ -321,6 +321,10 @@ template {
   margin: 25px auto 0 auto;
 }
 
+.lines_skills {
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 1024px) {
   .conteiner {
     width: 968px;
@@ -1013,6 +1017,173 @@ template {
   }
   .resume__item-head {
     padding-left: 85px;
+  }
+}
+
+.skills {
+  padding-top: 120px;
+}
+
+.skills_title {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.skills_title:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -8px;
+  left: 0;
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+  background: #ffa501;
+}
+
+.skills_title:before {
+  top: -6px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.skills_subtitle {
+  width: 100%;
+  text-align: center;
+}
+
+.skills_grid {
+  padding-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (270px)[4];
+      grid-template-columns: repeat(4, 270px);
+  -ms-grid-rows: (270px)[2];
+      grid-template-rows: repeat(2, 270px);
+  gap: 13px;
+  -ms-grid-columns: (minmax(270px, 270px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(270px, 270px));
+  -ms-grid-rows: (minmax(270px, 270px))[auto-fill];
+      grid-template-rows: repeat(auto-fill, minmax(270px, 270px));
+}
+
+.skills_img {
+  padding: 30px 29px 20px 30px;
+  border: 1px solid #000;
+}
+
+.skills_img-title {
+  font-style: normal;
+  font-weight: 700;
+  padding: 20px 0 15px 0;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000;
+}
+
+.skills_img-subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
+}
+
+.skills_progres {
+  margin-top: 128px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skills_progress {
+  width: 350px;
+  height: 70px;
+  margin-right: 45px;
+}
+
+.skills_progress:last-child {
+  margin-right: 0;
+}
+
+.skills_progress-block {
+  padding-bottom: 35px;
+}
+
+.skills_progress-title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 27px;
+  padding-left: 14px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.skills_progress-title:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -8px;
+  left: 0;
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+  background: #ffa501;
+}
+
+.skills_progress-percent {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.skills_progress-grey {
+  height: 14px;
+  background: #E8E4DE;
+  border-radius: 4px;
+}
+
+.skills_progress-orange {
+  display: block;
+  height: 14px;
+  background: #FFA501;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .skills_progres {
+    margin: 125px 16px 0 16px;
+  }
+  .skills_progress {
+    margin: 0 16px 0 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .skills {
+    padding-top: 70px;
+  }
+  .skills_progres {
+    display: block;
+    margin-top: 70px;
+  }
+  .skills_progress {
+    width: 260px;
+    height: auto;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

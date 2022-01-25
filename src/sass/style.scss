@@ -22,6 +22,9 @@
     &_resume {
         margin: 25px auto 0 auto;
     }
+    &_skills {
+        margin: 0 auto;
+    }
     
     
 }
@@ -49,3 +52,4 @@
 @import 'blocks/menu';
 @import 'blocks/about';
 @import 'blocks/resume';
+@import 'blocks/skills';

@@ -1,0 +1,119 @@
+.skills {
+    padding-top: 120px;
+    &_title {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &_subtitle {
+        width: 100%;
+        text-align: center;
+    
+    }
+    &_grid {
+        padding-top: 50px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        gap: 13px;
+        grid-template-columns: repeat(auto-fill, minmax(270px,270px));
+        grid-template-rows: repeat(auto-fill, minmax(270px,270px));
+    }
+    &_img {
+        padding: 30px 29px 20px 30px;
+        border: 1px solid #000;
+        &-title {
+            font-style: normal;
+            font-weight: 700;
+            padding: 20px 0 15px 0;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000;
+        }
+        &-subtitle {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000;
+        }
+    }
+    &_progres {
+        margin-top: 128px;
+        display: flex;
+    }
+    &_progress {
+        width: 350px;
+        height: 70px;
+        margin-right: 45px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &-block {
+            padding-bottom: 35px;
+        }
+        &-title {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 27px;
+            padding-left: 14px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            @include before_circle;
+        }
+        &-percent {
+            
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+        }
+        &-grey {
+            height: 14px;
+            background: #E8E4DE;
+            border-radius: 4px;
+        }
+        &-orange {
+            display: block;
+            height: 14px;
+            background: #FFA501;
+            border-radius: 4px;
+        }
+    }
+        
+}
+@media screen and (max-width: 768px) {
+    .skills {
+        &_progres {
+            margin: 125px 16px 0 16px;
+        }
+        &_progress {
+            margin: 0 16px 0 16px;
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    .skills {
+        padding-top: 70px;
+        &_progres {
+            display: block;
+            margin-top: 70px;
+        }
+        &_progress {
+            width: 260px;
+            height: auto;
+            margin: 0;
+        }
+    }
+}
+    
