@@ -17,9 +17,11 @@
     &_fz16 {
         position: relative;
         @include before_circle;
+        font-weight: 700;
         padding-left: 12px;
     }
     &_fz14 {
+        
         margin-top: 20px;
     }
     &_elem-3 {
