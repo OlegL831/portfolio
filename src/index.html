@@ -422,13 +422,20 @@
                     <img src="img/works/bread.jpg" alt="portfolio">
                 </a>
                 <a href="#" class="portfolio__item vertical">
-                    <img src="img/works/plans.jpg" alt="portfolio">
+                    <picture>
+                        <source media="(max-width: 1200px)" srcset="img/works/min_plans.png">
+                        <img src="img/works/plans.jpg" alt="portfolio">
+                    </picture> 
                 </a>
                 <a href="#" class="portfolio__item">
                     <img src="img/works/ipad.jpg" alt="portfolio">
                 </a>
                 <a href="#" class="portfolio__item horizonal">
-                    <img src="img/works/mac.jpg" alt="portfolio">
+                    <picture>
+                        <source media="(max-width: 1200px)" srcset="img/works/min_mac.png">
+                        <img src="img/works/mac.jpg" alt="portfolio">
+                    </picture>
+                    
                 </a>
             </div>
 
@@ -490,7 +497,7 @@
                     </div>
                 </div>
 
-                <div class="about_elem-2">
+                <div class="about_elem-2 contacts_about">
                     <div class="contacts_fz16 title title_fz16">Контакты</div>
                     <div class="contacts_fz36 title title_fz36">Свяжитесь со мной</div>
                     <div class="lines"></div>
@@ -531,7 +538,7 @@
                 
                 <div class="promo__btns contacts__btn">
                     
-                        <a href="#" class="promo__link btn">Отправить сообщение</a>
+                        <a href="#" class="promo__link btn title_fz12 contacts_fz12">Отправить сообщение</a>
                         <div class="contacts__policy">
                             <input required type="checkbox">
                             <span>Я согласен(а) с <a href="#">политикой конфиденциальности</a></span>

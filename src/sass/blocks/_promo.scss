@@ -48,3 +48,10 @@
         }
     }
 }
+@media screen and (max-width: 425px) {
+    .promo {
+        &_titles {
+            padding-top: 20px;
+        }
+    }
+}

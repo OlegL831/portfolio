@@ -413,6 +413,12 @@ template {
   }
 }
 
+@media screen and (max-width: 425px) {
+  .promo_titles {
+    padding-top: 20px;
+  }
+}
+
 .title {
   font-weight: bold;
   font-size: 36px;
@@ -781,7 +787,7 @@ template {
   .about_grid {
     display: block;
   }
-  .about_foto img {
+  .about_photo img {
     display: block;
     margin: 0 auto;
   }
@@ -805,9 +811,8 @@ template {
   .about_grid {
     display: block;
   }
-  .about_foto img {
-    width: 250px;
-    height: 340px;
+  .about_photo img {
+    width: 290px;
   }
   .about_elem-2 {
     width: 260px;
@@ -1086,7 +1091,6 @@ template {
 }
 
 .skills_progres {
-  height: 170px;
   margin-top: 128px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1095,7 +1099,6 @@ template {
 
 .skills_progress {
   width: 350px;
-  height: 70px;
   margin-right: 45px;
 }
 
@@ -1309,6 +1312,49 @@ template {
   color: #000;
 }
 
+@media (max-width: 1200px) {
+  .portfolio__wrapper {
+    -ms-grid-columns: (280px)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 280px);
+    grid-auto-rows: 280px;
+    gap: 13px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio__wrapper .horizonal, .portfolio__wrapper .vertical {
+    grid-row: unset;
+    grid-column: unset;
+  }
+  .portfolio_grid {
+    margin: 60px 20px 0 20px;
+  }
+}
+
+@media (max-width: 676px) {
+  .conteiner {
+    width: 290px;
+  }
+}
+
+@media (max-width: 425px) {
+  .portfolio {
+    padding-top: 30px;
+  }
+  .portfolio_title {
+    margin: 0 auto;
+  }
+  .portfolio_subtitle {
+    margin: 0 auto;
+  }
+  .portfolio_list {
+    margin: 50px auto 30px auto;
+  }
+  .portfolio_grid {
+    display: block;
+  }
+}
+
 .contacts {
   padding: 120px 0 92px 0;
 }
@@ -1424,5 +1470,79 @@ template {
 
 .contacts__policy span {
   font-size: 13px;
+}
+
+@media screen and (max-width: 1024px) {
+  .contacts__wrapper {
+    -ms-grid-rows: 237px 294px 69px;
+    -ms-grid-columns: 350px 510px;
+        grid-template: 237px 294px 69px / 350px 510px;
+    padding: 0;
+  }
+  .contacts_photo img {
+    height: 600px;
+    width: 100%;
+  }
+  .contacts__policy span {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts {
+    padding-top: 50px;
+  }
+  .contacts__wrapper {
+    display: block;
+    width: 700px;
+    margin: 0 auto;
+  }
+  .contacts_photo img {
+    display: none;
+  }
+  .contacts_about {
+    width: 350px;
+    margin-left: 85px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contacts_about {
+    width: 290px;
+    margin-left: 0;
+  }
+  .contacts__wrapper {
+    width: 290px;
+  }
+  .contacts_fz36 {
+    line-height: 6px;
+  }
+  .contacts__social {
+    padding-top: 5px;
+  }
+  .contacts_fz14 {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .contacts__form {
+    display: block;
+  }
+  .contacts__input {
+    width: 60%;
+    padding-bottom: 15px;
+  }
+  .contacts__policy span {
+    font-size: 6px;
+  }
+  .contacts_fz12 {
+    height: 0;
+    line-height: 0;
+  }
+  .title_fz12 {
+    font-size: 8px;
+  }
+  .btn {
+    padding: 12px 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

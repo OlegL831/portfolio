@@ -46,13 +46,11 @@
         }
     }
     &_progres {
-        height: 170px;
         margin-top: 128px;
         display: flex;
     }
     &_progress {
         width: 350px;
-        height: 70px;
         margin-right: 45px;
         &:last-child {
             margin-right: 0;
